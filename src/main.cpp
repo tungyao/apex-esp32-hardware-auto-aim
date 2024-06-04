@@ -50,14 +50,14 @@ void setup()
 
 void loop()
 {
-  if (Serial.available() > 0)
-  {
-    char buffer[2];
-    Serial.readBytesUntil('\n', buffer, 2);
-    int8_t x = buffer[0];
-    int8_t y = buffer[1];
-    mouse.move(x, y);
-  }
+  // if (Serial.available() > 0)
+  // {
+  //   char buffer[2];
+  //   Serial.readBytesUntil('\n', buffer, 2);
+  //   int8_t x = buffer[0];
+  //   int8_t y = buffer[1];
+  //   mouse.move(x, y);
+  // }
 }
 
 void TaskMouseMove(void *pvParameters)
